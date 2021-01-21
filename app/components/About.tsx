@@ -13,17 +13,17 @@ const About: React.FC = React.memo(() => {
           microservice, containerized or not!
         </p>
         <div className="doya">
-          <h3 className="title">Team Doya</h3><span><img className="sprout" id="sproutSpan" src="../assets/clean-sprout.gif" alt="sprout"></img></span>
+          <h3 className="title">Team FF</h3><span><img className="sprout" id="sproutSpan" src="../assets/clean-sprout.gif" alt="sprout"></img></span>
           <br/>
           <div>
-            <span className="text">Grace </span><br />
-            <span className="text">Jen </span><br />
-            <span className="text">Patty </span><br />
-            <span className="text">Stella </span><br /><br />
+            <span className="text">Vince Ho </span><br />
+            <span className="text">Matt Jiang </span><br />
+            <span className="text">Derek Lam </span><br />
+            <span className="text">Kit Loong Yee </span><br /><br />
           </div>
         </div>
         <h3 className="title">Contributors</h3>
-        <p className="text">Michael, Ronelle, Todd, Greg
+        <p className="text">Grace, Jen, Patty, Stella, Michael, Ronelle, Todd, Greg
         Brianna, Brian, Alon, Alan
         Ousman, Ben, Chris, Jenae, Tim</p>
       </div>

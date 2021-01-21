@@ -5,9 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   addOrderBtn.addEventListener('click', addOrder);
   const getOrdersBtn = document.getElementById('orderInfo');
   getOrdersBtn.addEventListener('click', getOrders);
-  var display = document.querySelector('#display');
+  const display = document.querySelector('#display');
 });
-
 
 const addBook = () => {
   const title = document.getElementById('field_A1').value;

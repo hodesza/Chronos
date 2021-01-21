@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = React.memo(function Header({ app, service,
           </option>
         ))}
         <option defaultValue='Select service'>
-          communications
+          Communications
         </option>
         {/* <option value="communications" selected={service === 'communications'}>
           communications

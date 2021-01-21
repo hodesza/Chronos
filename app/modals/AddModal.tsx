@@ -52,7 +52,7 @@ const AddModal: React.FC<AddModalProps> = React.memo(({ setOpen }) => {
     <div className="add-container">
       <div className="add-header">
         <h2>Add an Application</h2>
-        <p>Enter the database information used to track the service</p>
+        <p>Enter the database information used to track the service(s)</p>
       </div>
       <form onSubmit={handleSubmit}>
         <p>Required*</p>
