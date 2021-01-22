@@ -22,6 +22,10 @@ const server = new grpc.Server();
 server.addService(bookProto.ProxyToBook.service, {
   addBook: (call, callback) => {
     // get the properties from the gRPC client call
+    console.log(call.metadata);
+    const date = new Date();
+    call.metadata.add('timestamp1', JSON.stringify(date.getTime()))
+    call.sendMetadata(call.metadata);
     const { title, author, numberOfPages, publisher, bookID } = call.request;
     // create a book in our book collection
     BookModel.create({
@@ -47,6 +51,7 @@ server.addService(bookProto.ProxyToBook.service, {
 
 server.addService(bookProto.OrderToBook.service, {
   getBookInfo: (call, callback) => {
+    console.log(call.metadata);
     BookModel.findOne({ bookID: call.request.bookID }, (err, data) => {
       callback(null, data);
     })
