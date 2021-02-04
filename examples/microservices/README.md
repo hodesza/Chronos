@@ -72,12 +72,12 @@ To install the [Chronos](https://www.npmjs.com/package/chronos-microservice-debu
 [`npm install`](https://docs.npmjs.com/getting-started/installing-npm-packages-locally)command:
 
 ```
-npm install chronos-microservice-debugger3
+npm install chronos-tracker
 ```
 
 Once installed, write the following two lines at the top of each microservice's server file:
 ```javascript
-const cmd = require('chronos-microservice-debugger3');
+const cmd = require('chronos-tracker');
 cmd.propagate();
 ```
 
